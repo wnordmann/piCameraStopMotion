@@ -14,7 +14,7 @@ camera.on("start", function( err, timestamp ){
 });
 
 camera.on("read", function( err, timestamp, filename ){
-	console.log("timelapse image captured with filename: " + filename);
+	console.log("timelapse image captured with filename: " + filename + " " + timestamp);
 });
 
 camera.on("exit", function( timestamp ){
